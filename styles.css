@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+#logo {
+  max-width: 40rem;
+  width: 60vw;
+  height: auto;
+}
+#search-container {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#search-bar {
+  width: 30vw;
+  height: 2rem;
+  border-radius: 9999px;
+  border: 1px solid #3e3e3e;
+  padding: 0.5rem;
+  outline: none;
+}
+#btn-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+#btn-container button {
+  font-size: 1rem;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid #dadce0;
+  cursor: pointer;
+  background-color: #f8f9fa;
+}
+#btn-container button:hover {
+  background-color: #f1f3f4;
+  color: inherit;
+}
