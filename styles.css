@@ -92,7 +92,14 @@ body.dark-mode #theme-toggle:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 @media (max-width: 600px) {
+  #logo-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 10%;
+  }
+
   #logo {
-    margin-left: 50%;
+    margin-left: 0;
   }
 }
