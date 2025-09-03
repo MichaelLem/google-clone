@@ -8,11 +8,43 @@
 html {
   font-size: 16px;
 }
+header {
+  position: relative;
+}
+#dark-mode {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+html,
 body {
+  height: 100%;
+  overflow-x: hidden;
+}
+body {
+  background-color: white;
+  color: #121212;
+  transition: background-color 0.3s, color 0.3s;
+}
+main {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  padding-top: 20vh;
+}
+body.dark-mode {
+  background-color: #121212;
+  color: whitesmoke;
+}
+#theme-toggle {
+  font-size: 0.9rem;
+  padding: 6px 12px;
+  background-color: transparent;
+  color: inherit;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 #logo {
   max-width: 40rem;
@@ -26,7 +58,8 @@ body {
   align-items: center;
 }
 #search-bar {
-  width: 30vw;
+  width: 100%;
+  max-width: 30rem;
   height: 2rem;
   border-radius: 9999px;
   border: 1px solid #3e3e3e;
@@ -52,3 +85,9 @@ body {
   background-color: #f1f3f4;
   color: inherit;
 }
+#theme-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+body.dark-mode #theme-toggle:hover {
+  background-color: rgba(255,255,255,0.1);
+},
