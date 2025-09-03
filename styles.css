@@ -93,6 +93,6 @@ body.dark-mode #theme-toggle:hover {
 }
 @media (max-width: 600px) {
   #logo {
-    margin-left: 5%;
+    margin-left: 15%;
   }
 }
